@@ -1,0 +1,21 @@
+
+
+1. What is a Tag?
+ A tag is a pre-defined keyword written inside angle brackets eg. <p></p>.
+
+2. What is an Element?
+ An element is the complete structure.
+ It includes: opening tag + content + closing tag
+
+3. What is a Container Element?
+  A container element is an element that can hold other elements inside it.
+
+4. What is a Child Element?
+   A child element is an element inside another element.
+
+5. What is ROOT element ? 
+  It is the topmost container...which serves a parent for all other descendants
+
+6. what are Empty Elements ?
+ elements which do not have closing tags.
+	eg ) <img />
