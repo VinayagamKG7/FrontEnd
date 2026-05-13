@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars Mission Forms</title>
+</head>
+
+<body>
+    <section>
+
+        <center>
+            <h1>Mars Mission crew application</h1>
+            <p>Apply to become part of humanity’s next space journey</p>
+        </center> <hr>
+
+        <!-- Form section -->
+        <form action="">
+            <label><strong>1.Applicant Name :</strong></label>
+            <input type="text" placeholder="Enter your full name" minlength="3" required>
+            <br> <br>
+
+            <label><strong>2.Age :</strong></label>
+            <input type="number" min="18" max="50">
+            <br><br>
+
+            <label><strong>3.Email Address :</strong></label>
+            <input type="email" placeholder="Enter your email" required> <br><br>
+
+            <label><strong>4.Contact Number :</strong></label>
+            <input type="tel" minlength="10" max="10" placeholder="Enter contact Number..."><br><br>
+
+            <label><strong>5.Gender :</strong></label>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Other
+
+            <br><br>
+
+            <label><strong>6.Country:</strong></label>
+            <select>
+                <option value="">Select Country</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="Japan">Japan</option>
+                <option value="Canada">Canada</option>
+            </select> <br><br>
+
+            <label><strong>7.Area of Expertise :</strong></label>
+            <select>
+                <option value="">select Expertise</option>
+                <option value="pilot">Pilot</option>
+                <option value="scientist">scientist</option>
+                <option value="engineer">Engineer</option>
+                <option value="doctor">Doctor</option>
+            </select> <br><br>
+
+            <label><strong>8.Skills you possess :</strong></label> <br>
+            <input type="checkbox">Problem Solving <br>
+            <input type="checkbox">Coding  <br>
+            <input type="checkbox">Survival Training <br>
+            <input type="checkbox">Navigation
+
+            <br><br>
+
+            <label><strong>9.Fitness Level :</strong></label>
+            <input type="radio" name="fitness">Average
+            <input type="radio" name="fitness">Good
+            <input type="radio" name="fitness">Excellent
+            <br><br>
+
+            <label><strong>10.Why do you want to join the mission?</strong></label> <br>
+            <textarea cols="40" rows="10" placeholder="Enter here...."></textarea> <br> <br>
+
+            <label><strong>11. Upload Identification Photo:</strong></label>
+            <input type="file"> <br>  <br>
+
+            <label><strong>12.Emergency Contact Person :</strong></label>
+            <input type="text" minlength="3" placeholder="Enter contact Name...." required> <br> <br>
+
+            <input type="submit" value="Apply for mission"> <input type="reset" value="Clear Form"> <br>  <hr>
+
+
+        </form>
+    </section>
+</body>
+
+</html>
