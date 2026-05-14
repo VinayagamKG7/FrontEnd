@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-Day7</title>
+</head>
+
+<body>
+    <section>
+        <center>
+            <h1>Product List</h1>
+            <img src="../assets/images/productlogo.png" alt="">
+        </center>
+        
+
+        <form action="" method="">
+            <fieldset>
+                <legend>PRODUCT</legend>
+
+                <label for="name">Product Name :</label>
+                <input type="text" placeholder="Enter product name" id="name" required> <br> <br>
+
+                <label for="category">Product Category :</label>
+                <select id="category">
+                    <option value="" selected disabled>--Select a category--</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="clothing">Clothing</option>
+                    <option value="groceries">Groceries</option>
+                    <option value="furniture">Furniture</option>
+                    <option value="accessories">Accessories</option>
+                </select> <br> <br>
+
+                <label for="price">Product Price :</label>
+                <input type="number" placeholder="" Enter price" id="price"> <br> <br>
+
+                <label for="quan">Enter product quantity:</label>
+                <input type="number" id="quan"> <br> <br>
+
+                <label for="weight">Product weight(in kg) :</label>
+                <input type="number" id="weight"> <br> <br>
+
+                <label for="shipId">Product ShipId:</label>
+                <input type="text" id="shipId" placeholder="Enter ship Id"> <br> <br>
+
+                <label for="">Product License :</label>
+                <input type="radio" name="License">FSSAI
+                <input type="radio" name="License">GST
+                <input type="radio" name="License">Food License
+                <br> <br>
+
+                <label for="">Product Image :</label>
+                <input type="file">
+                <br> <br>
+
+                <label for="">Product City :</label>
+                <select>
+                    <option value="" selected disabled>--select city--</option>
+                    <option value="chennai">Chennai</option>
+                    <option value="coimbatore">Coimbatore</option>
+                    <option value="Madurai">Madurai</option>
+                    <option value="Trichy">Trichy</option>
+                </select> <br> <br>
+
+                <input type="submit" value="Add product"> <input type="reset">
+
+            </fieldset>
+
+
+        </form>
+        <hr>
+
+    </section>
+    <!-- Table -->
+     <br>
+    <section>
+        <center>
+            <table border="1">
+                <tr>
+                    <th colspan="5">Product Summary</th>
+                </tr>
+                <tr>
+                    <th>Product Name</th> <th>Category</th> <th>Price</th> <th>License</th> <th>ShipId</th>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">Rice Bag</td> <td>Groceries</td> <td>1200</td> <td>FSSAI</td> <td>SHIP123</td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+            </table>
+              
+        </center>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission Form</title>
+</head>
+
+<body>
+    <section>
+        <center>
+            <h1>College Admssion Form</h1>
+        </center>
+        <form action="" method="">
+            <fieldset>
+                <legend>Student personal Details</legend>
+
+                <label for="name">Full name:</label>
+                <input type="text" placeholder="Enter name" id="name"> <br> <br>
+
+                <label for="fname">Father name:</label>
+                <input type="text" placeholder="Enter father name" id="fname"> <br> <br>
+
+                <label for="mname">Mother name:</label>
+                <input type="text" placeholder="Enter mother name" id="mname"> <br> <br>
+
+                <label for="dob">Date of birth:</label>
+                <input type="date" id="dob"> <br> <br>
+
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" minlength="10" maxlength="10" id="mobile" required>
+
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Course Selection</legend>
+                <label for="">Select Course:</label>
+                <select>
+                    <option value="" selected disabled>--select course--</option>
+                    <optgroup label="Undergraduate Courses">
+                        <option value="bsc">B.sc Computer science</option>
+                        <option value="bca">B.C.A</option>
+                        <option value="bcom">B.com</option>
+                    </optgroup>
+
+                    <optgroup label="Engineering Courses">
+                        <option value="cse">CSE</option>
+                        <option value="ece">ECE</option>
+                        <option value="mechanical">Mechanical</option>
+                        <option value="civil">Civil</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+
+            <br>
+            <fieldset>
+                <legend>Communication Address</legend>
+                <label for="city">City:</label>
+                <input type="text" placeholder="Enter city" id="city"> <br> <br>
+
+                <label for="state">State:</label>
+                <input type="text" placeholder="Enter state" list="dropstate">
+
+                <datalist id="dropstate">
+                    <option value="Andhra Pradesh">
+                    <option value="Arunachal Pradesh">
+                    <option value="Assam">
+                    <option value="Bihar">
+                    <option value="Chhattisgarh">
+                    <option value="Goa">
+                    <option value="Gujarat">
+                    <option value="Haryana">
+                    <option value="Himachal Pradesh">
+                    <option value="Jharkhand">
+                    <option value="Karnataka">
+                    <option value="Kerala">
+                    <option value="Madhya Pradesh">
+                    <option value="Maharashtra">
+                    <option value="Manipur">
+                    <option value="Meghalaya">
+                    <option value="Mizoram">
+                    <option value="Nagaland">
+                    <option value="Odisha">
+                    <option value="Punjab">
+                    <option value="Rajasthan">
+                    <option value="Sikkim">
+                    <option value="Tamil Nadu">
+                    <option value="Telangana">
+                    <option value="Tripura">
+                    <option value="Uttar Pradesh">
+                    <option value="Uttarakhand">
+                    <option value="West Bengal">
+                </datalist>
+                <br> <br>
+                <label for="pincode">Pincode:</label>
+                <input type="text">
+            </fieldset> <br>
+
+            <input type="submit" value="Submit Application">
+            <input type="reset" value="clear Form">
+        </form>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="../../assets/favicons/student-registration.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registraion Form</title>
+</head>
+
+<body>
+    <section>
+        <center>
+            <h1>Student Registration Form</h1>
+        </center>
+
+
+        <form action="">
+            <fieldset>
+                <legend> <strong>Registration</strong></legend>
+                <table>
+                    <tr>
+                        <td> <label for="name">Student Name :</label> </td>
+                        <td> <input type="text" placeholder="Enter Name" id="name" required> </td>
+                    </tr>
+
+                    <tr>
+                        <td> <label for="email">Email</label> </td>
+                        <td> <input type="email" placeholder="Enter mail" id="email" required> </td>
+                    </tr>
+
+                    <tr>
+                        <td> <label for="password">Password :</label> </td>
+                        <td> <input type="password" id="password" required> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="phone">Phone Number :</label> </td>
+                        <td> <input type="tel" id="phone" minlength="10" maxlength="10"> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="DOB">Date of Birth :</label> </td>
+                        <td> <input type="date" id="DOB"> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="gender">Gender :</label> </td>
+                        <td> <input type="radio" name="gender"><span>Male</span> <input type="radio"
+                                name="gender"><span>Female</span> <input type="radio" name="gender"><span>Other</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> <label for="">Skills :</label> </td>
+                        <td>
+                            <input type="checkbox"><span>HTML</span>
+                            <input type="checkbox"><span>CSS</span>
+                            <input type="checkbox"><span>JS</span>
+                            <input type="checkbox"><span>Python</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> <label for="">Department :</label> </td>
+                        <td>
+                            <select>
+                                <option value="" selected disabled>--select Department--</option>
+                                <option value="cse">CSE</option>
+                                <option value="IT">IT</option>
+                                <option value="ece">ECE</option>
+                                <option value="mech">Mechanical</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="">Address :</label> </td>
+                    </tr>
+                    <tr>
+                        <td> <textarea rows="3" cols="10" placeholder="Enter Address..."></textarea> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="file">Upload File:</label> </td>
+                        <td> <input type="file" id="file"> </td>
+                    </tr>
+                    <tr>
+                        <td> <input type="submit" value="Register"> </td>
+                        <td> <input type="reset" value="Clear"> </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </section>
+</body>
+
+</html>
