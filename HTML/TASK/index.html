@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="../assets/favicons/og-img.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Webpage</title>
+</head>
+
+<body>
+    <header id="header">
+        <h1>HTML5 Demonstration webpage</h1>
+        <p>This webpage demonstrates the major concepts and features of HTML5 including semantic and non-semantic
+            elements, formatting tags, block and inline level elements, multimedia integration, forms, tables,
+            attributes, data collection, and data presentation</p>
+        <h2>In page navigation</h2>
+
+        <nav>
+            <ul>
+                <li><a href="#About">About HTML5</a></li>
+                <li><a href="#block-inline">Block and Inline Elements</a></li>
+                <li><a href="#formatting">Formatting Tags</a></li>
+                <li><a href="#semantic">Semantic Elements</a></li>
+                <li><a href="#non-semantic">Non-Semantic Elements</a></li>
+                <li><a href="#attributes">Attributes</a></li>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#multimedia">Multimedia</a></li>
+                <li><a href="#form-section">Data Collection Form</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+
+    <section id="About">
+        <h2>About HTML5</h2>
+        <p>HTML5 is the latest version of HyperText Markup Language used to structure content on the web. It provides
+            modern features for building responsive and interactive websites without relying heavily on external
+            technologies. HTML5 introduced semantic elements, multimedia support, improved forms, and APIs that help
+            developers create efficient web applications.</p>
+        <p>Modern websites use HTML5 because it improves accessibility, search engine optimization, user experience, and
+            browser compatibility. HTML5 allows developers to organize content clearly using meaningful tags such as
+            <code>&lt;header&gt;</code>,<code>&lt;section&gt;</code>,<code>&lt;article&gt;</code>and
+            <code>&lt;Footer&gt;</code>
+        </p>
+        <h3>Quick Information</h3>
+        <p>HTML5 supports multimedia tags like audio and video directly in the browser, reducing the need for external
+            plugins.</p>
+        <a href="#header">Back to Top</a>
+    </section>
+    <hr>
+
+    <section id="block-inline">
+        <h2>Block and Inline Level Elements</h2>
+        <h3>Block Level Elements</h3>
+        <p>Block level elements always start on a new line and occupy the full width available. These elements are
+            commonly used to structure the layout of a webpage.</p>
+        <h4>Examples of Block Level Elements</h4>
+
+        <ul>
+            <li>div</li>
+            <li>section</li>
+            <li>article</li>
+            <li>header</li>
+            <li>footer</li>
+            <li>nav</li>
+            <li>p</li>
+            <li>table</li>
+        </ul>
+
+        <h3>Inline Elements</h3>
+        <p>Inline elements do not start on a new line. They only occupy the space required by their content. These are
+            mostly used within text content.</p>
+        <p>Example Includes &nbsp;: <span>span</span>,<strong>strong</strong>,<em>em</em>,<mark>mark</mark>,<a
+                href="">anchor Tag</a>and <code>code</code></p>
+        <a href="#header">Back to Top</a>
+    </section>
+
+    <hr>
+
+    <section id="formatting">
+        <h2>Formatting Tags</h2>
+
+        <p>
+            HTML provides various formatting tags that help emphasize, highlight, and structure content.
+        </p>
+
+        <p><b>Bold text using b tag</b></p>
+        <p><strong>Important text using strong tag</strong></p>
+        <p><i>Italic text using i tag</i></p>
+        <p><em>Emphasized text using em tag</em></p>
+        <p><u>Underlined text using u tag</u></p>
+        <p><mark>Highlighted text using mark tag</mark></p>
+        <p><small>Small sized text</small></p>
+        <p>H<sub>2</sub>O demonstrates subscript text.</p>
+        <p>X<sup>2</sup> demonstrates superscript text.</p>
+        <p><del>Deleted content example</del></p>
+        <p><ins>Inserted content example</ins></p>
+        <pre>
+          This is preformatted text.
+        Spacing and line breaks
+        are preserved exactly.
+        </pre>
+        <a href="#header">Back to Top</a>
+    </section>
+
+    <hr>
+
+    <section id="semantic">
+        <h2>Semantic Elements</h2>
+
+        <p>
+            Semantic elements clearly describe the meaning of the content they contain.
+            These tags improve accessibility and search engine understanding.
+        </p>
+        <div>
+            <h3>Popular semantic tags</h3>
+            <ol>
+                <li>header</li>
+                <li>nav</li>
+                <li>main</li>
+                <li>section</li>
+                <li>article</li>
+                <li>aside</li>
+                <li>footer</li>
+                <li>figure</li>
+            </ol>
+
+            <img src="../assets/images/semantic.jpg" alt="semantic-page" width="450" height="350">
+        </div>
+        <a href="#header">Back to Top</a>
+    </section>
+
+    <hr>
+
+    <section id="non-semantic">
+        <h2>Non-Semantic Elements</h2>
+
+        <p>
+            Non-semantic elements do not describe the meaning of their content.
+            They are mainly used for grouping and styling purposes.
+        </p>
+
+        <div>
+            <h3>Examples of Non-Semantic Tags</h3>
+
+            <ul>
+                <li>div</li>
+                <li>span</li>
+            </ul>
+        </div>
+
+        <p>
+            The <code>div</code> tag is commonly used as a container element,
+            while the <code>span</code> tag is used for inline grouping.
+        </p>
+        <a href="#header">Back to Top</a>
+    </section>
+
+    <hr>
+
+    <section id="attributes">
+        <h2>HTML Attributes</h2>
+
+        <p>
+            Attributes provide additional information about HTML elements.
+            They are written inside the opening tag.
+        </p>
+
+        <h3>Commonly Used Attributes</h3>
+
+        <ol>
+            <li><b>id</b> – identifies a unique element.</li>
+            <li><b>class</b> – groups multiple elements together.</li>
+            <li><b>href</b> – specifies the destination URL.</li>
+            <li><b>src</b> – specifies the source of media files.</li>
+            <li><b>alt</b> – provides alternate text for images.</li>
+            <li><b>title</b> – displays extra information as a tooltip.</li>
+            <li><b>target</b> – defines where a linked document opens.</li>
+            <li><b>placeholder</b> – displays temporary input text.</li>
+            <li><b>required</b> – makes form fields mandatory.</li>
+        </ol>
+
+        <p title="This is a tooltip example">
+            Move the cursor over this text to view the title attribute.
+        </p>
+
+        <a href="#header">Back to Top</a>
+    </section>
+
+    <hr>
+
+    <section id="tables">
+        <h2>Data Projection Using Tables</h2>
+        <p>Tables are used to organize and present data in rows and columns. HTML tables are useful for displaying
+            structured information clearly.</p>
+
+        <div>
+            <table border="1">
+                <caption>Web development course Schedule</caption>
+                <tr>
+                    <th>Course</th>
+                    <th>Duration</th>
+                    <th>Level</th>
+                    <th>Mode</th>
+                </tr>
+
+                <tr>
+                    <td>HTML5 Fundamentals</td>
+                    <td>4 Weeks</td>
+                    <td>Beginner</td>
+                    <td>Online</td>
+                </tr>
+
+                <tr>
+                    <td>CSS3 Design</td>
+                    <td>5 Weeks</td>
+                    <td>Intermediate</td>
+                    <td>Hybrid</td>
+                </tr>
+                <tr>
+                    <td>JavaScript Essentials</td>
+                    <td>6 Weeks</td>
+                    <td>Intermediate</td>
+                    <td>offline</td>
+                </tr>
+            </table>
+        </div> <br>
+
+        <a href="#header">Back to Top</a>
+    </section>
+
+    <hr>
+
+    <section id="multimedia">
+        <h2>Multimedia Elements</h2>
+
+        <p>
+            HTML5 allows developers to integrate multimedia content directly into webpages.
+            Audio and video can be embedded without external plugins.
+        </p>
+
+        <h3>Image Example</h3>
+        <img src="../assets/images/techimage.jfif" alt="Technology Image" width="500">
+
+        <h3>Audio Example</h3>
+        <audio controls>
+            <source src="../assets/audio/santur-gitar.mp3" type="audio/mp3">
+            Your browser does not support audio playback.
+        </audio>
+
+        <h3>Video Example</h3>
+        <video width="500" controls>
+            <source src="../assets/videos/sample-5s.mp4" type="video/mp4">
+            Your browser does not support video playback.
+        </video> <br>
+
+        <a href="#header">Back to Top</a>
+        <hr>
+    </section>
+
+
+    <section id="form-section">
+        <h2>Professional Data Collection Form</h2>
+
+        <p>
+            Forms are used to collect information from users.
+            HTML5 provides various input types and controls for better data validation and usability.
+        </p>
+
+        <form action="#" method="post">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br><br>
+
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password"><br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone"><br><br>
+
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob"><br><br>
+
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label>
+            </fieldset>
+
+            <br>
+            <fieldset>
+                <legend>Course Preferences</legend>
+
+                <label for="course">Select Course:</label><br>
+                <select>
+                    <option value="" selected disabled>--select course--</option>
+                    <option>HTML5</option>
+                    <option>CSS3</option>
+                    <option>JavaScript</option>
+                    <option>React</option>
+                    <option>Full Stack Development</option>
+                </select>
+
+                <br><br>
+
+                <label>Skills Interested In:</label><br>
+                <input type="checkbox" id="frontend" name="skills" value="Frontend">
+                <label for="frontend">Frontend</label>
+
+                <input type="checkbox" id="backend" name="skills" value="Backend">
+                <label for="backend">Backend</label>
+
+                <input type="checkbox" id="database" name="skills" value="Database">
+                <label for="database">Database</label>
+
+                <input type="checkbox" id="cloud" name="skills" value="Cloud">
+                <label for="cloud">Cloud</label>
+
+                <br><br>
+
+                <label for="experience">Experience Level:</label><br>
+                <input type="range" id="experience" name="experience" min="0" max="10">
+
+                <br><br>
+
+                <label for="resume">Upload Resume:</label><br>
+                <input type="file" id="resume" name="resume">
+            </fieldset>
+
+            <br>
+
+            <input type="submit"> <input type="reset" value="Clear">
+        </form>
+        <a href="#header">Back to Top</a>
+    </section>
+
+    <hr>
+        <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+
+        <details>
+            <summary>What is HTML5?</summary>
+            <p>
+                HTML5 is the latest version of HTML used to structure and present content on the web.
+            </p>
+        </details>
+
+        <details>
+            <summary>Why are semantic tags important?</summary>
+            <p>
+                Semantic tags improve accessibility, readability, and search engine optimization.
+            </p>
+        </details>
+
+        <details>
+            <summary>What is the purpose of forms?</summary>
+            <p>
+                Forms collect user data such as registration details, feedback, and login information.
+            </p>
+        </details>
+
+        <a href="#header">Back to Top</a>
+        <hr>
+    </section>
+
+    <footer id="contact">
+        <hr>
+
+        <p>
+            &copy; 2026 HTML5 Professional Demonstration Project.
+        </p>
+
+        <p>
+            Designed using HTML5 semantic structure and modern webpage elements.
+        </p>
+    </footer>
+    <a href="#header">Back to Top</a>
+
+</body>
+
+</html>
