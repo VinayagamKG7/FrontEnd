@@ -1,0 +1,141 @@
+inline CSS :
+
+
+1.<h1 style="color:red; background-color:yellow;font-size:12px">Heading</h1>
+
+2 <p style="color:blue; background-color:lightgray;font-size:12px">Paragraph</p>
+
+3. <div style="color:green; background-color:pink;font-size:12px">Content</div>
+
+4. <button style="color:white; background-color:orange;font-size:12px">Click</button>
+
+5.<a style="color:green; background-color:pink;font-size:12px">This is a link </a>
+
+6. <p style="color:blue; background-color:lightgray;font-size:12px">hello</p>
+
+7. <p style="color:blue; background-color:lightgray;font-size:12px">lorem ipsum</p>
+
+8. <div style="color:green; background-color:pink;font-size:12px">Content</div>
+
+9. <button style="color:white; background-color:orange;font-size:12px">Click</button>
+
+10. <h1 style="color:red; background-color:yellow;font-size:12px">Heading</h1>
+
+11. <h2 style="color:black; background-color:yellow;font-size:14px">Heading2</h2>
+
+12. <h3 style="color:red; background-color:yellow;font-size:12px">Heading</h3>
+
+13. <h4 style="color:red; background-color:orange;font-size:12px">Heading4</h4>
+
+14. <h5 style="color:red; background-color:yellow;font-size:12px">Heading5</h5>
+
+15. <header style="color:green; background-color:pink;font-size:12px">This is header</header>
+
+16. <footer style="background-color:yellow;font-size:12px; color:aqua">This is footer</footer>
+
+17. <section style="background-color:yellow;font-size:12px; color:aqua">Lorem ipsum dolor sit amet.</section>
+
+18. <article style="color:blue; background-color:lightgray;font-size:12px">This is a independent content</article>
+
+19. <strong style="color:red; background-color:yellow;font-size:10px">This is bold text</strong>
+
+20. <sup style="color:white; background-color:orange;">superscript</sup>
+
+
+
+EXTERNAL CSS :
+
+
+
+1. h1{
+    color:red;
+    background-color:yellow;
+    font-size:20px;
+}
+
+2. p{
+    color:blue;
+    background-color:lightgray;
+    font-size:18px;
+}
+
+3. div{
+    color:green;
+    background-color:pink;
+
+}
+
+4. button{
+    color:white;
+    background-color:orange;
+   
+}
+
+5. ul{
+    color:purple;
+    background-color:lightblue;
+   
+}
+
+6. li{
+	background-color:pink ;
+        
+
+}
+
+7.  header{
+    color:white;
+    background-color:darkblue;
+    font-size:24px;
+}
+
+8.  section{
+    color:black;
+    background-color:lightgray;
+    font-size:18px;
+}
+
+9.  footer{
+    color:white;
+    background-color:black;
+    font-size:16px;
+}
+
+10.  nav{
+    color:white;
+    background-color:teal;
+    font-size:20px;
+}
+
+11.  article{
+    color:darkred;
+    background-color:lightyellow;
+    font-size:18px;
+}
+
+12. aside{
+    color:blue;
+    background-color:lightpink;
+    font-size:18px;
+}
+
+13. h2{
+    color:navy;
+    background-color:lightblue;
+    font-size:24px;
+}
+
+14. h3{
+    color:maroon;
+    background-color:beige;
+    font-size:22px;
+}
+
+15. ol{
+    color:brown;
+    background-color:lightgray;
+    font-size:18px;
+}
+
+
+

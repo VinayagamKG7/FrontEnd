@@ -1,0 +1,30 @@
+h1{
+    color:chocolate;
+    background-color: bisque;
+}
+p{
+    color:blue;
+    background-color: beige;
+    width:100px;
+    height:100px;
+}
+div{
+    color:chartreuse;
+}
+button{
+    color:white;
+    background-color: black;
+    border:none;
+    border-radius: 10px;
+    padding:10px;
+    width:100px;
+    font-weight: bold;
+    cursor: pointer;
+}
+dl{
+    background-color: bisque;
+}
+dt{
+    color:white;
+    background-color: blue;
+}
