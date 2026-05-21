@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-3</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .parent {
+            background-color: burlywood;
+            height: 500px;
+            padding: 100px 0px 0px 0px;
+            margin:20px 5px 0px 5px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+        }
+
+        .child {
+            width: 50%;
+            background-color: red;
+            height: 60%;
+            padding-top: 50px;
+            margin: 0 auto;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px;
+        }
+
+        .grandchild {
+            width: 60%;
+            text-align: center;
+            background-color: white;
+            margin: 0 auto;
+            height: 50%;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        .parent p {
+            border: 5px solid chartreuse;
+            border-radius: 5px;
+        }
+        h1{
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding:15px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Nested Boxes</h1><br> <hr>
+    <div class="parent">
+        <div class="child">
+
+            <div class="grandchild">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, est?</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

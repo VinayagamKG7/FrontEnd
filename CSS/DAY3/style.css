@@ -1,0 +1,24 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.parent{
+    width:200px;
+    height:200px;
+    background-color: brown;
+    color:white;
+    margin:auto;
+}
+.parent p, .box p{
+    margin:10px;
+    padding:10px;
+    text-align: center;
+}
+.box{
+    width:200px;
+    height:200px;
+    background-color: blue;
+    color:white;
+    margin: auto;
+}
