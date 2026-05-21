@@ -1,0 +1,150 @@
+<html>
+
+<head>
+    <title>CSS Selectors Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 id="mainHeading">Welcome to CSS Selectors</h1>
+    <h1 class="title">Learning HTML and CSS</h1>
+    <h1 class="title">Frontend Development Basics</h1>
+    <h1>Webpage Styling Techniques</h1>
+
+
+    <p class="para">
+        HTML is used to create the structure of webpages while CSS
+        is used to style and design the webpage elements.
+    </p>
+
+    <p class="para">
+        CSS selectors help developers target specific HTML elements
+        and apply different styles to them.
+    </p>
+
+    <p>
+        External CSS is written in a separate file and connected
+        to the HTML document using the link tag.
+    </p>
+
+    <p>
+        Different selectors are used for different purposes such as
+        styling groups, unique elements and nested elements.
+    </p>
+
+    
+    <div class="box">
+
+        <h2>Child Selector Example</h2>
+
+        <p>
+            This paragraph is the direct child of the box div.
+            Child selectors use the greater than symbol.
+        </p>
+
+        <div>
+
+            <p>
+                This paragraph is inside another div element.
+                It will not follow the child selector style.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="container">
+
+        <h2>Descendant Selector Example</h2>
+
+        <p>
+            Descendant selectors target all matching elements
+            inside a parent element.
+        </p>
+
+        <section>
+
+            <p>
+                This paragraph is inside the section tag within
+                the container div element.
+            </p>
+
+        </section>
+
+    </div>
+
+
+    <div class="info">
+
+        <h2>About CSS</h2>
+
+        <p>
+            CSS stands for Cascading Style Sheets.
+        </p>
+
+        <p>
+            CSS controls colors, fonts, backgrounds and many
+            other visual properties.
+        </p>
+
+        <ul>
+            <li>HTML creates structure</li>
+            <li>CSS adds styling</li>
+            <li>JavaScript adds interactivity</li>
+        </ul>
+
+    </div>
+
+
+    <table border="1">
+
+        <tr>
+            <th>Technology</th>
+            <th>Purpose</th>
+        </tr>
+
+        <tr>
+            <td>HTML</td>
+            <td>Structure</td>
+        </tr>
+
+        <tr>
+            <td>CSS</td>
+            <td>Styling</td>
+        </tr>
+
+        <tr>
+            <td>JavaScript</td>
+            <td>Interactivity</td>
+        </tr>
+
+    </table>
+    <br>
+
+    <form>
+
+        <label for="name">Enter Name:</label>
+        <input type="text" id="name">
+
+        <br><br>
+
+        <label for="course">Select Course:</label>
+
+        <select id="course">
+            <option value="" selected disabled>--select course--</option>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JavaScript</option>
+        </select>
+
+        <br><br>
+
+        <button id="btn">Submit</button>
+
+    </form>
+
+</body>
+
+</html>

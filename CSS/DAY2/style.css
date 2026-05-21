@@ -1,0 +1,93 @@
+h1 {
+    color: black;
+    background-color: lightgray;
+    font-size: 30px;
+}
+
+#mainHeading {
+    color: white;
+    background-color: brown;
+    font-size: 36px;
+}
+
+.title {
+    color: blue;
+    background-color: beige;
+    font-size: 32px;
+}
+
+.para {
+    color: green;
+    background-color: lightyellow;
+    font-size: 20px;
+}
+
+p {
+    color: black;
+    background-color: white;
+    font-size: 18px;
+}
+
+.box {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+.box>p {
+    color: yellow;
+    background-color: gray;
+    font-size: 22px;
+}
+
+.container p {
+    color: purple;
+    background-color: lavender;
+    font-size: 21px;
+}
+
+.info p {
+    color: darkblue;
+    background-color: lightcyan;
+    font-size: 19px;
+}
+
+ul {
+    color: darkred;
+    background-color: lightpink;
+    font-size: 20px;
+}
+
+table {
+    background-color: beige;
+    font-size: 20px;
+}
+
+th {
+    color: white;
+    background-color: darkblue;
+    font-size: 22px;
+}
+
+td {
+    color: black;
+    background-color: lightyellow;
+    font-size: 18px;
+}
+
+#btn {
+    color: white;
+    background-color: green;
+    font-size: 18px;
+    border: none;
+
+}
+
+form label[for] {
+    color: brown;
+    font-size: 20px;
+}
+
+input[type] {
+    caret-color: red;
+}
