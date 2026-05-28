@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .parent {
+            width: 500px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+            background-color: green;    
+            gap: 1px;
+            padding: 2px;
+        }
+
+        .parent>* {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <p>hello</p>
+        <p>Lorem, ipsum.</p>
+        <p>Hi,all</p>
+        <h3>hI</h3>
+        <h2>Hello</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+
+</html>

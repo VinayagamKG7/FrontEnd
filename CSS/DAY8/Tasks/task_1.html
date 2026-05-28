@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-card(grid)</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+
+        body {
+            padding: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            transition: 0.4s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .card h2 {
+            margin: 15px 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 style="text-align: center;">Cards</h1> <br>
+    <div class="container">
+
+        <div class="card">
+            <img src="https://picsum.photos/300/200?1">
+            <h2>Nature</h2>
+            <p>Beautiful scenery card.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/300/200?2">
+            <h2>Mountains</h2>
+            <p>Mountain Stream.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/300/200?3">
+            <h2>Ocean</h2>
+            <p>Riverside Beauty.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

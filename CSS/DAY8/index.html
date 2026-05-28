@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            height: 100vh;
+        }
+        div{
+            background-color: bisque;
+            padding:15px;
+            width:50%;
+            margin:100px auto;
+        }
+        input {
+            width: 200px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        input:focus {
+            outline: none;
+            border: 4px solid green;  
+            color:black;    
+        }
+        button{
+            padding:10px;
+            width:150px;
+            border-radius: 10px;
+            border:none;
+            background-color: greenyellow;
+            color:black;
+        }
+        button:hover{
+            background-color: white;
+            border:1px solid black;
+            color:green;
+            transition:0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" placeholder="Enter name" id="name">
+        <button>Submit</button>
+    </div>
+</body>
+
+</html>

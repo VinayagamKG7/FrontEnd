@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>Button-hover</title>
+
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #111;
+        }
+
+        button {
+            padding: 15px 35px;
+            border: none;
+            background: #ff4d4d;
+            color: white;
+            font-size: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        button:hover {
+            transform: scale(1.2) rotate(360deg);
+            background: #00b894;
+            box-shadow: 2px 2px 10px 5px #00b894;
+        }
+    </style>
+
+</head>
+
+<body>
+    <button>Hover Me</button>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: greenyellow;
+            font-family: Arial;
+        }
+
+        .profile-card {
+            width: 300px;
+            padding: 30px;
+            background: white;
+            border-radius: 20px;
+            text-align: center;
+            transition: 0.5s;
+            box-shadow: 2px 2px 5px white;
+        }
+
+        .profile-card::before {
+            content: "🧑🏻‍💻";
+            display: block;
+            font-size: 25px;
+            transition: 0.5s;
+        }
+
+        .profile-card::after {
+            content: "Software Developer";
+            display: block;
+            margin-top: 15px;
+            color: gray;
+            transition: 0.5s;
+        }
+
+        .profile-card:hover {
+            transform: rotate(5deg) scale(1.05);
+        }
+
+        .profile-card:hover::before {
+            transform: rotate(360deg);
+        }
+
+        .profile-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 20px 0;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #555;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="profile-card">
+        <img src="../../assests/images/coding.avif" width="200">
+        <h2>Vinayagam K</h2>
+        <p>SDE-1</p>
+
+    </div>
+
+</body>
+
+</html>
