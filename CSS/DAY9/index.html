@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .parent{
+            display: flex;
+            justify-content: center;
+            margin-top:30px;
+            gap:20px;
+        }
+        .child{
+            background-color: burlywood;
+            color:black;
+            width: min-content;
+            position:relative;
+        }
+        .child span{
+            background-color: red;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px red;
+            color:white;
+            padding:10px;
+            position:absolute;
+            top:10px;
+            left:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            <img src="../assests/images/decathlon/boot-1.avif" alt="">
+            <p>QUECHUA MEN's LEATHER HIGH TREKKING SHOES MT1</p>
+            <p>MRP Rs.9,999</p>
+            <span>Online Exclusive</span>
+        </div>
+
+         <div class="child">
+            <img src="../assests/images/decathlon/boot-1.avif" alt="">
+            <p>QUECHUA MEN's LEATHER HIGH TREKKING SHOES MT1</p>
+            <p>MRP Rs.9,999</p>
+            <span>Online Exclusive</span>
+        </div>
+
+         <div class="child">
+            <img src="../assests/images/decathlon/boot-1.avif" alt="">
+            <p>QUECHUA MEN's LEATHER HIGH TREKKING SHOES MT1</p>
+            <p>MRP Rs.9,999</p>
+            <span>Online Exclusive</span>
+        </div>
+    </div>
+</body>
+</html>

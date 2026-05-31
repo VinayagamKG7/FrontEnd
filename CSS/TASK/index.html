@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Journey | Learn Modern CSS</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="../assests/images/Favicons/css.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header class="hero">
+
+        <nav class="navbar">
+
+            <h1 class="logo">CSS Tutorial</h1>
+
+            <ul class="nav-links">
+                <li><a href="#about">About CSS</a></li>
+                <li><a href="#types">Types</a></li>
+                <li><a href="#selectors">Selectors</a></li>
+                <li><a href="#specificity">Specificity</a></li>
+                <li><a href="#pseudo">Pseudo</a></li>
+                <li><a href="#box-model">Box Model</a></li>
+                <li><a href="#flexbox">Flexbox</a></li>
+                <li><a href="#grid">Grid</a></li>
+                <li><a href="#position">Position</a></li>
+                <li><a href="#media">Media Queries</a></li>
+            </ul>
+
+        </nav>
+
+        <div class="hero-content">
+
+            <div class="hero-text">
+
+                <h2>Master CSS One Step at a Time</h2>
+
+                <p>
+                    CSS is the technology that transforms plain HTML pages
+                    into beautiful, responsive, and interactive websites.
+                    Learn the concepts that power modern web design,
+                    from colors and typography to advanced layouts and animations.
+                </p>
+
+                <a href="#about" class="btn">
+                    Start Learning
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section id="about">
+
+            <h2>What is CSS?</h2>
+
+            <div class="section-layout">
+
+                <div class="section-image">
+
+                    <img src="../assests/images/task/css_img.svg" alt="What is CSS">
+
+                </div>
+
+                <div class="section-text">
+
+                    <p>
+                        CSS stands for Cascading Style Sheets. It is the language
+                        used to style and design webpages. While HTML provides
+                        the structure and content of a website, CSS controls
+                        its appearance. CSS helps developers change colors,
+                        fonts, spacing, layouts, animations, and much more.
+                    </p>
+
+                    <p>
+                        Think of HTML as the structure of a house.
+                        HTML creates the walls, windows, doors, and rooms.
+                        CSS acts as the interior designer that decides
+                        the colors, furniture arrangement, decorations,
+                        lighting, and overall appearance.
+                    </p>
+
+                    <p>
+                        Without CSS, websites would look plain and difficult
+                        to use. Every modern website relies on CSS to create
+                        attractive layouts and improve user experience.
+                    </p>
+
+                    <p>
+                        Today, CSS is one of the most important technologies
+                        for frontend web development. It works together with
+                        HTML and JavaScript to build powerful web applications.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <h2>Why Learn CSS?</h2>
+
+            <p class="section-intro">
+                CSS is much more than changing colors. It provides the tools
+                required to create professional websites that are attractive,
+                responsive, and easy to use.
+            </p>
+
+            <div class="cards">
+
+                <article class="card">
+
+                    <h3>Create Beautiful Websites</h3>
+
+                    <p>
+                        CSS allows developers to transform plain content into
+                        visually appealing designs using colors, layouts,
+                        gradients, shadows, and animations.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>Improve User Experience</h3>
+
+                    <p>
+                        Good styling improves readability, accessibility,
+                        and navigation, making websites easier to use.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>Responsive Design</h3>
+
+                    <p>
+                        CSS enables websites to adapt automatically to
+                        different screen sizes such as mobiles, tablets,
+                        and desktop computers.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>Industry Standard Skill</h3>
+
+                    <p>
+                        CSS is one of the core technologies used by
+                        frontend developers around the world.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section id="types">
+
+            <h2>Types of CSS</h2>
+
+            <p class="section-intro">
+                CSS can be applied to HTML in three different ways.
+                Each method has its own advantages and use cases.
+            </p>
+
+            <div class="cards">
+
+                <article class="card">
+
+                    <img src="../assests/images/task/inline.png" alt="Inline CSS">
+
+                    <h3>Inline CSS</h3>
+
+                    <p>
+                        Inline CSS is written directly inside an HTML element
+                        using the style attribute.
+                    </p>
+
+                    <p>
+                        It affects only the specific element where it is applied.
+                        Although useful for quick testing, it is not recommended
+                        for large projects because maintenance becomes difficult.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <img src="../assests/images/task/Internal.png" alt="Internal CSS">
+
+                    <h3>Internal CSS</h3>
+
+                    <p>
+                        Internal CSS is written inside a style tag within
+                        the head section of an HTML document.
+                    </p>
+
+                    <p>
+                        This approach is suitable for small websites
+                        or projects that consist of a single page.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <img src="../assests/images/task/external.webp" alt="External CSS">
+
+                    <h3>External CSS</h3>
+
+                    <p>
+                        External CSS is stored in a separate stylesheet
+                        and linked to HTML using the link tag.
+                    </p>
+
+                    <p>
+                        This is the most recommended method because styles
+                        can be reused across multiple webpages and projects.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section id="selectors">
+
+            <h2>CSS Selectors</h2>
+
+            <img src="../assests/images/task/selectors.png" class="selectors_img" alt="CSS Selectors">
+
+            <p>
+                Selectors help CSS identify which HTML elements should
+                receive specific styles. Without selectors, CSS would
+                not know which elements to target.
+            </p>
+
+            <p>
+                Different types of selectors allow developers to apply
+                styles with different levels of precision.
+            </p>
+
+            <table>
+
+                <tr>
+                    <th>Selector</th>
+                    <th>Example</th>
+                    <th>Description</th>
+                </tr>
+
+                <tr>
+                    <td>Element</td>
+                    <td>p</td>
+                    <td>Selects all paragraph elements</td>
+                </tr>
+
+                <tr>
+                    <td>Class</td>
+                    <td>.card</td>
+                    <td>Selects elements sharing a class</td>
+                </tr>
+
+                <tr>
+                    <td>ID</td>
+                    <td>#header</td>
+                    <td>Selects one unique element</td>
+                </tr>
+
+                <tr>
+                    <td>Universal</td>
+                    <td>*</td>
+                    <td>Selects all elements</td>
+                </tr>
+
+                <tr>
+                    <td>Group</td>
+                    <td>h1,h2,h3</td>
+                    <td>Selects multiple elements together</td>
+                </tr>
+
+            </table>
+
+            <div class="cards">
+
+                <article class="card">
+                    <h3>Element Selector</h3>
+                    <p>
+                        Targets all elements of a specific type.
+                        Example: styling every paragraph in a document.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Class Selector</h3>
+                    <p>
+                        Useful for reusable styles across multiple elements.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>ID Selector</h3>
+                    <p>
+                        Used when a style should be applied to a unique element.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section id="specificity">
+
+            <h2>Specificity and Cascading</h2>
+
+            <img src="../assests/images/task/specificity-calculation.png" alt="Specificity Diagram">
+
+            <p>
+                Sometimes multiple CSS rules target the same element.
+                In such cases, the browser uses specificity to determine
+                which style should be applied.
+            </p>
+
+            <p>
+                Specificity acts like a ranking system. Selectors with
+                higher priority override selectors with lower priority.
+            </p>
+
+            <div class="specificity-box">
+
+                <h3>Priority Order</h3>
+
+                <ol>
+                    <li>Inline CSS</li>
+                    <li>ID Selectors</li>
+                    <li>Class Selectors</li>
+                    <li>Element Selectors</li>
+                </ol>
+
+            </div>
+
+            <p>
+                The word "Cascading" refers to the process of combining
+                multiple CSS rules and determining which styles should
+                ultimately appear on the webpage.
+            </p>
+
+        </section>
+
+        <section id="pseudo">
+
+            <h2>Pseudo Classes and Pseudo Elements</h2>
+
+            <p>
+                Pseudo classes and pseudo elements allow developers to style
+                elements based on their state or specific parts.
+            </p>
+
+            <div class="cards">
+
+                <article class="card">
+
+                    <h3>Pseudo Classes</h3>
+
+                    <ul>
+                        <li>:hover</li>
+                        <li>:focus</li>
+                        <li>:active</li>
+                        <li>:first-child</li>
+                    </ul>
+
+                    <button class="demo-btn">
+                        Hover Over Me
+                    </button>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>Pseudo Elements</h3>
+
+                    <ul>
+                        <li>::before</li>
+                        <li>::after</li>
+                        <li>::first-letter</li>
+                        <li>::first-line</li>
+                    </ul>
+
+                    <p class="pseudo-demo">
+                        Pseudo elements help style specific parts of content.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <h2>Basic CSS Properties</h2>
+
+            <p>
+                CSS properties define how elements should appear on a webpage.
+                These are some of the most commonly used properties.
+            </p>
+
+            <div class="property-grid">
+
+                <div class="property">Color</div>
+                <div class="property">Background</div>
+                <div class="property">Margin</div>
+                <div class="property">Padding</div>
+                <div class="property">Border</div>
+                <div class="property">Width</div>
+                <div class="property">Height</div>
+                <div class="property">Display</div>
+
+            </div>
+
+        </section>
+
+
+        <section id="box-model">
+
+            <h2>CSS Box Model</h2>
+
+            <img src="../assests/images/task/box-model.webp" alt="CSS Box Model">
+
+            <p>
+                Every HTML element is treated as a box. Understanding the
+                box model helps control spacing and layouts.
+            </p>
+
+            <div class="cards">
+
+                <article class="card">
+                    <h3>Content</h3>
+                    <p>The actual text, image, or media.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Padding</h3>
+                    <p>Space between content and border.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Border</h3>
+                    <p>The visible boundary around an element.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Margin</h3>
+                    <p>Space outside the element.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <section>
+
+            <h2>CSS Units</h2>
+
+            <p>
+                CSS provides different units for sizing elements, spacing,
+                and typography.
+            </p>
+
+            <div class="cards">
+
+                <article class="card">
+                    <h3>px</h3>
+                    <p>Fixed measurement unit.</p>
+                </article>
+
+                <article class="card">
+                    <h3>%</h3>
+                    <p>Relative to the parent element.</p>
+                </article>
+
+                <article class="card">
+                    <h3>em</h3>
+                    <p>Relative to the parent's font size.</p>
+                </article>
+
+                <article class="card">
+                    <h3>rem</h3>
+                    <p>Relative to the root font size.</p>
+                </article>
+
+                <article class="card">
+                    <h3>vw</h3>
+                    <p>Viewport width.</p>
+                </article>
+
+                <article class="card">
+                    <h3>vh</h3>
+                    <p>Viewport height.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section id="flexbox">
+
+            <h2>Flexbox Layout</h2>
+            <img src="../assests/images/task/flex.png" alt="">
+
+            <p>
+                Flexbox is a one-dimensional layout system that helps arrange
+                items efficiently in rows or columns.
+            </p>
+
+            <p>
+                It is commonly used for navigation bars, cards, galleries,
+                and responsive layouts.
+            </p>
+
+            <div class="flex-demo">
+
+                <div class="flex-card">
+                    <h3>Alignment</h3>
+                    <p>Center and align content easily.</p>
+                </div>
+
+                <div class="flex-card">
+                    <h3>Spacing</h3>
+                    <p>Create equal spacing between items.</p>
+                </div>
+
+                <div class="flex-card">
+                    <h3>Responsive</h3>
+                    <p>Items can wrap automatically.</p>
+                </div>
+
+            </div>
+
+            <p>
+                Common Flexbox properties include
+                <strong>justify-content</strong>,
+                <strong>align-items</strong>,
+                <strong>flex-wrap</strong>,
+                and <strong>gap</strong>.
+            </p>
+
+        </section>
+
+        <section id="grid">
+
+            <h2>CSS Grid</h2>
+
+            <img src="../assests/images/task/grid.jfif" class="grid_img" alt="Grid Layout">
+
+            <p>
+                CSS Grid is a two-dimensional layout system that works with
+                rows and columns simultaneously.
+            </p>
+
+            <p>
+                It is ideal for dashboards, image galleries, portfolios,
+                and modern website layouts.
+            </p>
+
+            <div class="grid-demo">
+
+                <div class="grid-card">Dashboard</div>
+                <div class="grid-card">Gallery</div>
+                <div class="grid-card">Portfolio</div>
+                <div class="grid-card">Store</div>
+                <div class="grid-card">Blog</div>
+                <div class="grid-card">Admin Panel</div>
+
+            </div>
+
+            <p>
+                Grid provides greater control over complex layouts compared
+                to traditional methods.
+            </p>
+
+        </section>
+
+
+        <section id="position">
+
+            <h2>CSS Position Property</h2>
+
+            <p>
+                The <strong>position</strong> property controls how an element
+                is placed on a webpage. It is commonly used for navigation bars,
+                badges, floating buttons, popups, and many other interface elements.
+            </p>
+
+            <div class="cards">
+
+                <article class="card">
+                    <h3>Static</h3>
+                    <p>
+                        The default position value. Elements follow the normal
+                        document flow and cannot be moved using top, left,
+                        right, or bottom.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Relative</h3>
+                    <p>
+                        Moves an element relative to its original position
+                        while still keeping its original space reserved.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Absolute</h3>
+                    <p>
+                        Removes an element from the normal flow and positions
+                        it relative to its nearest positioned parent.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Fixed</h3>
+                    <p>
+                        Stays attached to the browser window even while
+                        scrolling. Commonly used for chat buttons.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Sticky</h3>
+                    <p>
+                        Behaves like relative positioning until a specific
+                        scroll point is reached, then sticks in place.
+                    </p>
+                </article>
+
+            </div>
+
+            <table>
+
+                <tr>
+                    <th>Position</th>
+                    <th>Normal Flow</th>
+                    <th>Common Use</th>
+                </tr>
+
+                <tr>
+                    <td>Static</td>
+                    <td>Yes</td>
+                    <td>Default Layout</td>
+                </tr>
+
+                <tr>
+                    <td>Relative</td>
+                    <td>Yes</td>
+                    <td>Minor Adjustments</td>
+                </tr>
+
+                <tr>
+                    <td>Absolute</td>
+                    <td>No</td>
+                    <td>Badges & Labels</td>
+                </tr>
+
+                <tr>
+                    <td>Fixed</td>
+                    <td>No</td>
+                    <td>Floating Buttons</td>
+                </tr>
+
+                <tr>
+                    <td>Sticky</td>
+                    <td>Partially</td>
+                    <td>Navigation Bars</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+        <section>
+
+            <h2>Overflow</h2>
+
+            <p>
+                Sometimes content becomes larger than its container.
+                The overflow property controls what happens in such situations.
+            </p>
+
+            <div class="overflow-box">
+
+                Overflow can be set to visible, hidden, scroll, or auto.
+                This is useful in chat windows, dashboards, sidebars,
+                content cards, and many modern web applications.
+                When content exceeds its container, overflow properties
+                help maintain a clean and organized layout.
+
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <h2>Typography</h2>
+
+            <p>
+                Typography is the art of presenting text in a readable and
+                visually appealing way. Good typography improves user
+                experience and makes content easier to understand.
+            </p>
+
+            <blockquote>
+                Great design begins with clear and readable content.
+            </blockquote>
+
+            <div class="cards">
+
+                <article class="card">
+                    <h3>Font Family</h3>
+                    <p>Defines the typeface used for text.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Font Size</h3>
+                    <p>Controls the size of text.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Font Weight</h3>
+                    <p>Controls text thickness.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Line Height</h3>
+                    <p>Improves readability between lines.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- =========================
+         ANIMATIONS & TRANSITIONS
+    ========================== -->
+
+        <section>
+
+            <h2>Animations and Transitions</h2>
+
+            <p>
+                CSS animations and transitions help create interactive
+                user experiences without JavaScript.
+            </p>
+
+            <div class="cards">
+
+                <article class="card">
+                    <h3>Transitions</h3>
+
+                    <p>
+                        Smoothly change property values when a user interacts
+                        with an element.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>Animations</h3>
+
+                    <p>
+                        Create advanced movement and effects using keyframes.
+                    </p>
+
+                </article>
+
+            </div>
+
+            <p>
+                Examples include hover effects, loading indicators,
+                fading content, sliding menus, and bouncing elements.
+            </p>
+
+        </section>
+
+        <!-- =========================
+         MEDIA QUERIES
+    ========================== -->
+
+        <section id="media">
+
+            <h2>Media Queries</h2>
+
+            <img src="../assests/images/task/media_query.jpg" alt="Responsive Design">
+
+            <p>
+                Users access websites from many different devices,
+                including desktops, laptops, tablets, and smartphones.
+            </p>
+
+            <p>
+                Media queries allow CSS to apply different styles based
+                on screen size, orientation, or device characteristics.
+            </p>
+
+            <p>
+                Responsive design ensures that a website remains usable
+                and visually appealing across all screen sizes.
+            </p>
+
+            <div class="cards">
+
+                <article class="card">
+                    <h3>Mobile First</h3>
+                    <p>
+                        Design for smaller screens first and then enhance
+                        the layout for larger devices.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Responsive Layouts</h3>
+                    <p>
+                        Flexbox and Grid work together with media queries
+                        to create adaptive designs.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <h2>Summary</h2>
+
+            <p>
+                CSS is one of the most important technologies in web
+                development. It helps developers create attractive,
+                responsive, and user-friendly websites.
+            </p>
+
+            <p>
+                In this guide, we explored CSS fundamentals including
+                selectors, specificity, pseudo classes, box model,
+                units, Flexbox, Grid, positioning, overflow,
+                typography, animations, and media queries.
+            </p>
+
+            <p>
+                Mastering these concepts provides a strong foundation
+                for building modern websites and web applications.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <h3>CSS Tutorial</h3>
+
+        <p>
+            A webpage created to
+            demonstrate the most important concepts of CSS.
+        </p>
+
+        <p>
+            Learn • Practice • Build • Improve
+        </p>
+
+        <p>
+            &copy; 2026 CSS Journey. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
