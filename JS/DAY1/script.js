@@ -1,4 +1,5 @@
 // Varible names using Var
+
 var studentName;
 console.log(studentName);
 
