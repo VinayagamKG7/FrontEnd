@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdventureHub Admin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-100">
+
+    <div class="grid grid-cols-1 md:grid-cols-4 min-h-screen">
+
+        <!-- Sidebar -->
+        <aside class="bg-emerald-700 text-white p-6">
+
+            <h1 class="text-2xl font-bold mb-8">
+                AdventureHub
+            </h1>
+
+            <ul class="space-y-4">
+                <li class="bg-emerald-800 p-3 rounded">Dashboard</li>
+                <li class="hover:bg-emerald-800 p-3 rounded">Bookings</li>
+                <li class="hover:bg-emerald-800 p-3 rounded">Travelers</li>
+                <li class="hover:bg-emerald-800 p-3 rounded">Destinations</li>
+                <li class="hover:bg-emerald-800 p-3 rounded">Reviews</li>
+                <li class="hover:bg-emerald-800 p-3 rounded">Settings</li>
+            </ul>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="md:col-span-3 p-6">
+
+            <!-- Heading -->
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold">
+                    Dashboard Overview
+                </h2>
+
+                <button class="bg-emerald-600 text-white px-4 py-2 rounded">
+                    Add Tour
+                </button>
+            </div>
+
+            <!-- Statistics Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <h3 class="text-gray-500">Total Travelers</h3>
+                    <p class="text-3xl font-bold mt-2">2,450</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <h3 class="text-gray-500">Bookings</h3>
+                    <p class="text-3xl font-bold mt-2">1,180</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <h3 class="text-gray-500">Destinations</h3>
+                    <p class="text-3xl font-bold mt-2">85</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <h3 class="text-gray-500">Revenue</h3>
+                    <p class="text-3xl font-bold mt-2">$48K</p>
+                </div>
+
+            </div>
+
+            <!-- Chart Placeholder -->
+            <div class="bg-white rounded-xl shadow p-6 mb-8">
+
+                <h3 class="text-xl font-bold mb-4">
+                    Monthly Booking Trends
+                </h3>
+
+                <div class="h-64 border-2 border-dashed border-gray-300 rounded flex items-center justify-center">
+                    Chart Placeholder
+                </div>
+
+            </div>
+
+            <!-- Recent Users Table -->
+            <div class="bg-white rounded-xl shadow p-6">
+
+                <h3 class="text-xl font-bold mb-4">
+                    Recent Travelers
+                </h3>
+
+                <div class="overflow-x-auto">
+
+                    <table class="w-full border-collapse">
+
+                        <thead>
+                            <tr class="bg-emerald-600 text-white">
+                                <th class="p-3 text-left">Name</th>
+                                <th class="p-3 text-left">Destination</th>
+                                <th class="p-3 text-left">Date</th>
+                                <th class="p-3 text-left">Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr class="border-b">
+                                <td class="p-3">Aarav</td>
+                                <td class="p-3">Bali</td>
+                                <td class="p-3">12 Jun 2026</td>
+                                <td class="p-3 text-green-600">Confirmed</td>
+                            </tr>
+
+                            <tr class="border-b">
+                                <td class="p-3">Meera</td>
+                                <td class="p-3">Switzerland</td>
+                                <td class="p-3">14 Jun 2026</td>
+                                <td class="p-3 text-yellow-600">Pending</td>
+                            </tr>
+
+                            <tr class="border-b">
+                                <td class="p-3">Kavin</td>
+                                <td class="p-3">Thailand</td>
+                                <td class="p-3">15 Jun 2026</td>
+                                <td class="p-3 text-green-600">Confirmed</td>
+                            </tr>
+
+                            <tr>
+                                <td class="p-3">Priya</td>
+                                <td class="p-3">Maldives</td>
+                                <td class="p-3">18 Jun 2026</td>
+                                <td class="p-3 text-red-600">Cancelled</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
