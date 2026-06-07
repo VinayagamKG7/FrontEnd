@@ -2,143 +2,86 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/CSS/style.css">
-    <title>Tasks</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinayagam FrontEnd Dev tasks</title>
+    <link rel="shortcut icon" href="assets/favicon/1.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'DM Sans', sans-serif;
+        }
+    </style>
 </head>
 
-<body>
-    <h1>Tasks-HTML</h1>
+<body class="bg-gray-100 text-gray-800 min-h-screen">
 
-    <p>
-        Day4 - <a href="HTML/DAY-4/Task-1/index.html">Task1 </a> | <a href="HTML/DAY-4/Task-2/index.html">Task2</a>
-    </p>
+    <!-- Navbar -->
+    <nav class="bg-white border-b border-gray-200 px-6 py-4 flex items-center justify-between">
+        <span class="text-xl font-bold text-indigo-600">Vinayagam Dev Hub</span>
+        <div class="flex gap-6 text-sm font-medium text-gray-600">
+            <a href="index.html" class="text-indigo-600 font-semibold">Home</a>
+            <a href="html-tasks.html" class="hover:text-indigo-600 transition">HTML</a>
+            <a href="css-tasks.html" class="hover:text-indigo-600 transition">CSS</a>
+            <a href="js-tasks.html" class="hover:text-indigo-600 transition">JavaScript</a>
+        </div>
+    </nav>
 
-    <p>
-        Day5 - <a href="HTML/DAY-5/index.html">Task</a>
-    </p>
-
-    <p>
-        Day6 - <a href="HTML/DAY-6/forms.html" target="_blank">Mars mission Form</a>
-    </p>
-
-    <div>
-        <p>Day7-</p>
-        <ul>
-            <li><a href="HTML/DAY-7/Tasks/StudentRegistration.html" target="_blank">Task1-Student Registration</a></li>
-            <li><a href="HTML/DAY-7/Tasks/EmployeeTable.html" target="_blank">Task2-Employee Table</a></li>
-            <li><a href="HTML/DAY-7/Tasks/Login-Signup.html" target="_blank">Task3-Login & Signup</a></li>
-            <li><a href="HTML/DAY-7/Tasks/collegeAdmission.html" target="_blank">Task4-College Admission</a></li>
-            <li><a href="HTML/DAY-7/Tasks/productDetails.html" target="_blank">Task5-Product Details</a></li>
-            <li><a href="HTML/DAY-7/Tasks/ResumeBuilder.html" target="_blank">Task6-Resume Builder</a></li>
-        </ul>
+    <!-- Banner -->
+    <div class="bg-indigo-600 text-white text-center py-16 px-4">
+        <h1 class="text-4xl font-bold mb-3">Frontend Task Hub</h1>
+        <p class="text-indigo-200 text-lg">All my HTML, CSS & JavaScript practice tasks — in one place.</p>
     </div>
 
-    <p>Day-8 - <a href="HTML/DAY-8/task.html" target="_blank">Multimedia Tags</a> </p>
+    <!-- Cards -->
+    <div class="max-w-4xl mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-3 gap-6">
 
-    <p>Test - <a href="HTML/TEST/test.html" target="_blank">Test-HTML5</a></p>
+        <!-- HTML Card -->
+        <a href="html-tasks.html"
+            class="group bg-white rounded-2xl border border-gray-200 p-8 shadow-sm hover:shadow-md hover:border-orange-400 transition-all">
+            <div
+                class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mb-5 group-hover:bg-orange-200 transition">
+                <span class="text-2xl">🧱</span>
+            </div>
+            <h2 class="text-lg font-bold mb-2">HTML Tasks</h2>
+            <p class="text-sm text-gray-500">Forms, tables, multimedia tags, semantic structure and more.</p>
+            <span class="mt-5 inline-block text-sm font-medium text-orange-500 group-hover:underline">View Tasks
+                →</span>
+        </a>
 
-    <p>Final Task -- <a href="HTML/TASK/final_task.html" target="_blank">HTML5 Webpage</a></p>
+        <!-- CSS Card -->
+        <a href="css-tasks.html"
+            class="group bg-white rounded-2xl border border-gray-200 p-8 shadow-sm hover:shadow-md hover:border-indigo-400 transition-all">
+            <div
+                class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center mb-5 group-hover:bg-indigo-200 transition">
+                <span class="text-2xl">🎨</span>
+            </div>
+            <h2 class="text-lg font-bold mb-2">CSS Tasks</h2>
+            <p class="text-sm text-gray-500">Selectors, Flexbox, Grid, Bootstrap, Tailwind CSS and more.</p>
+            <span class="mt-5 inline-block text-sm font-medium text-indigo-500 group-hover:underline">View Tasks
+                →</span>
+        </a>
 
-    <hr>
-
-    <!-- CSS Tasks -->
-
-    <h1>CSS Tasks</h1>
-
-    <div>
-        <p>Day-1- Task1-<a href="CSS/DAY1/css.txt" target="_blank">Inline & External syntax</a></p>
-
-        <p>Day-1 - Task2:</p>
-
-        <ul>
-            <li><a href="CSS/DAY1/inline.html">Inline CSS</a></li>
-            <li><a href="CSS/DAY1/internal.html">Internal CSS</a></li>
-            <li><a href="CSS/DAY1/external.html">External CSS</a></li>
-        </ul>
+        <!-- JS Card -->
+        <a href="js-tasks.html"
+            class="group bg-white rounded-2xl border border-gray-200 p-8 shadow-sm hover:shadow-md hover:border-yellow-400 transition-all">
+            <div
+                class="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center mb-5 group-hover:bg-yellow-200 transition">
+                <span class="text-2xl">⚡</span>
+            </div>
+            <h2 class="text-lg font-bold mb-2">JavaScript Tasks</h2>
+            <p class="text-sm text-gray-500">Variables, functions, DOM manipulation and JS fundamentals.</p>
+            <span class="mt-5 inline-block text-sm font-medium text-yellow-600 group-hover:underline">View Tasks
+                →</span>
+        </a>
 
     </div>
 
-    <p>Day-2 - Task- <a href="CSS/DAY2/selectors.html" target="_blank">Selectors</a></p>
+    <!-- Footer -->
+    <footer class="text-center text-xs text-gray-400 pb-8"> &copy; 2026 Vinayagam Frontend Hub • Frontend Learning
+        Journey</footer>
 
-    <p>Day-3- Task - <a href="CSS/DAY3/TASK/task_1.html" target="_blank">Task1</a> | <a href="CSS/DAY3/TASK/task_2.html"
-            target="_blank">Task2</a> | <a href="CSS/DAY3/TASK/task_3.html" target="_blank">Task3</a></p>
-
-    <div>
-        <p>Day-4 - Tasks</p>
-        <ul>
-            <li><a href="CSS/DAY4/Task/Task_1.html" target="_blank">Task1</a></li>
-            <li><a href="CSS/DAY4/Task/Task_2.html">Task-2_Card Layout</a></li>
-            <li><a href="CSS/DAY4/Task/Task_3.html">Task-3_NavBar</a></li>
-            <li><a href="CSS/DAY4/Task/Task_4.html">Task-4_Image Gallery</a></li>
-            <li><a href="CSS/DAY4/Task/Task_5.html">Task-5_Justify Content demo</a></li>
-
-        </ul>
-    </div>
-
-    <p>Day-5 - <a href="CSS/DAY5/index.html" target="_blank">Webpage Task-decathlon</a></p>
-
-    <p>Day-6 - <a href="CSS/DAY6/index.html" target="_blank">Task-Figma</a></p>
-
-    <p>Day7 - <a href="CSS/DAY7/TASK/index.html" target="_blank">SLA-Course_details Page</a></p>
-
-    <div>
-        <p>Day-8 - </p>
-
-        <ul>
-            <li><a href="CSS/DAY8/Tasks/task_1.html" target="_blank">Task_1_card</a></li>
-            <li><a href="CSS/DAY8/Tasks/task_2.html" target="_blank">Task_2_button</a></li>
-            <li><a href="CSS/DAY8/Tasks/task_3.html" target="_blank">Task_3_profileCard</a></li>
-            <li><a href="CSS/DAY8/Tasks/task_4.html" target="_blank">Task_4_Gallery</a></li>
-            <li><a href="CSS/DAY8/Tasks/task_5.html" target="_blank">Task_5_cardsLayout</a></li>
-        </ul>
-    </div>
-
-    <p>Day-9 - <a href="CSS/TASK/index.html" target="_blank">CSS concepts</a></p>
-
-    <div>
-        <p>Day-10-Bootstrap - <a href="BOOTSTRAP/DAY1/index.html" target="_blank">Bootstrap_page</a> </p>
-    </div>
-
-
-    <div>
-        <p>Day-11 - Tailwind CSS</p>
-        <ul>
-            <li><a href="TAILWIND/DAY1/task_1.html" target="_blank">Card_task</a></li>
-            <li><a href="TAILWIND/DAY1/task_2.html" target="_blank">grid_3_column</a></li>
-            <li><a href="TAILWIND/DAY1/task_3.html" target="_blank">Nav_bar</a></li>
-            <li><a href="TAILWIND/DAY1/task_4.html" target="_blank">Profile Card</a></li>
-            <li><a href="TAILWIND/DAY1/task_5.html" target="_blank">Gallery</a></li>
-        </ul>
-    </div>
-
-    <div>
-        <p>Day-12 - Tailwind CSS</p>
-        <ul>
-            <li><a href="TAILWIND/DAY2/task_1.html" target="_blank">Responsive course cards</a></li>
-            <li><a href="TAILWIND/DAY2/task_2.html" target="_blank">Dashboard</a></li>
-            <li><a href="TAILWIND/DAY2/task_3.html" target="_blank">LearnHub Landing page</a></li>
-        </ul>
-    </div>
-
-    <div>
-        <p>Day-13 - Tailwind CSS</p>
-        <ul>
-            <li><a href="TAILWIND/DAY3/task_1.html" target="_blank">Task_1_SkillForge webpage</a></li>
-            <li><a href="TAILWIND/DAY3/task_2.html" target="_blank">Task_2_companyWebpage</a></li>
-            <li><a href="TAILWIND/DAY3/task_3.html" target="_blank">Task_3_Admin Dashboard</a></li>
-            <li><a href="TAILWIND/DAY3/task_4.html" target="_blank">Task_4_greenleaf_ecommerce</a></li>
-            <li><a href="TAILWIND/DAY3/task_5.html" target="_blank">Task_5_Student Registraion</a></li>
-        </ul>
-    </div>
-
-    <hr>
-
-    <!-- js tasks -->
-    <h1>Javascript Tasks</h1>
-
-    <p>Day-1 - <a href="JS/DAY1/variables.html" target="_blank">JS Variables</a></p>
 </body>
 
 </html>
