@@ -67,4 +67,14 @@ let frontEnd = []
 frontEnd[0] = "HTML"
 frontEnd[1] = "CSS"
 frontEnd[2] = "Javascript"
-console.log( frontEnd )
+console.log(frontEnd)
+
+// Task 10
+let color_arr = ["red", 'green', 'blue', 'orange', 'blue']
+
+for (let k = 0; k < color_arr.length; k++) {
+    console.log(color_arr[k])
+}
+
+// Task 11
+
