@@ -1,0 +1,36 @@
+<script>
+    const showReceipies = () => {
+        let receipies = [{
+            name: "Dosa",
+            ingredients: ["oil", "Batter", "salt"],
+            preparation: {
+                duration: "10mins"
+            }
+        },
+
+        {
+            name: "Briyani",
+            ingredients: ["Rice", "oil", "masala", "onion", 'Tomato', "curd"],
+            preparationTime: {
+                duration: "30mins"
+            }
+        },
+
+        {
+            name: "Curd Rice",
+            ingredients: ["Curd", "butter", "Rice"],
+            preparationTime: {
+                duration: "5mins"
+            }
+        }]
+
+        // for (let i = 0; i < receipies.length; i++) {
+        //     console.log(receipies[i].ingredients)
+        // }
+
+        receipies.forEach(item => {
+            console.log(item.ingredients)
+        })
+    }
+    showReceipies() 
+</script>

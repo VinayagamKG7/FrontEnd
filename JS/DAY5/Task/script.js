@@ -77,4 +77,10 @@ for (let k = 0; k < color_arr.length; k++) {
 }
 
 // Task 11
+let student = {
+    name: "Vinayagam",
+    age: 20,
+    course: "MERN Stack"
+};
 
+console.log(student);
