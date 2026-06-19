@@ -1,0 +1,43 @@
+<script>
+
+//     let arr = ["ajth", "vijay", "str", "dhanush"]
+//     let find_actor = "str"
+//     if (arr.includes(find_actor)) {
+//         console.log("Actor found!");
+//     }
+
+//     const arr2 = [1,2,3,4,5]
+
+//     let copy  = arr2.slice(1,4)
+//     console.log( copy );
+
+
+
+
+const outer = () =>{
+    let balance = 1000 ;
+
+    const inner = (amount) =>{
+        // console.log( balance )
+
+        balance += amount
+        console.log( balance )
+    }
+
+    return inner
+}
+
+let closure = outer()
+console.log( closure )
+
+
+
+
+// function add(a,b){
+//     return a+b ;
+// }
+
+// let addFunc = add
+// console.log( addFunc )2
+
+</script>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10 -Tasks</title>
+</head>
+
+<body>
+
+    <h1>Day 10 Tasks</h1>
+    <div>
+        <h2>Tasks 2</h2>
+
+        <pre>
+            const movie = () => {
+                let collection = 800;
+                console.log("Inside function:", collection);
+            };
+
+           movie();
+           console.log(collection);
+        </pre>
+        <p>collection is created using let inside the function, so it exists only inside that function (function scope).
+            Outside the function it cannot be accessed.</p>
+    </div>
+
+    <div>
+        <h2>Tasks 3</h2>
+
+        <pre>
+            if (true) {
+
+                var actor1 = "Ajith";
+
+                let actor2 = "Vijay";
+            }
+            console.log(actor1);
+            console.log(actor2);
+        </pre>
+        <p>var does not follow block scope, so actor1 can be accessed outside.</p>
+        <p>let follows block scope, so actor2 exists only inside the if block.</p>
+    </div> <br>
+
+    <p>For all the output...pls see in the console Tab....</p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
