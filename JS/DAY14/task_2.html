@@ -1,0 +1,33 @@
+<style>
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        color: white;
+        margin-top: 30px;
+        display: none;
+    }
+</style>
+
+<input type="text" placeholder="Enter Text" id="inputField">
+
+<div class="box" id="box_visible">
+</div>
+
+<script>
+    const input_type = document.getElementById("inputField");
+
+    input_type.addEventListener("change", () => {
+       
+        if( input_type.value == "show"  ){
+            document.getElementById('box_visible').style.display = 'block'
+        }
+        else if (input_type.value == "hide"){
+            document.getElementById('box_visible').style.display = 'none'
+        }
+        else{
+            console.log( "Invalid Input" )
+        }
+
+    });
+</script>

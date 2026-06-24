@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="flex flex-col gap-3">
+        <button class="bg-blue-950 text-white w-50 p-2 rounded cursor-pointer" onclick="clickToHide()">Click me
+        </button>
+        <div class="w-2/5 flex bg-black text-white h-80 justify-center items-center" id="box">
+            <h1>Box</h1>
+        </div>
+    </div>
+
+    <script>
+        const clickToHide = () => {
+            let box = document.getElementById("box");
+
+            if (box.style.display === "none") {
+                box.style.display = 'flex'
+            } else {
+                box.style.display = 'none'
+            }
+        }
+
+    </script>
+</body>
+
+</html>
