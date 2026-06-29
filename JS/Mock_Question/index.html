@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Question</title>
+</head>
+
+<body>
+    <h2 style="text-align: center;">Mock Coding question</h2>
+    <p>Count the letters in the given array:</p>
+    <code>
+        const arr = ["java", "react", "node"]
+    </code>
+    <br> <br>
+
+    <span><strong>Output :</strong></span>
+    <div id="output"></div>
+
+
+
+    <script>
+        const arr = ["java", "react", "node"]
+
+        let count = {}
+
+        let text = arr.join('')
+        // console.log(text)
+
+        for (let i = 0; i < text.length; i++) {
+            // console.log( text[i] )
+            let letter = text[i];
+
+            if (count[letter]) {
+                count[letter]++
+            } else {
+                count[letter] = 1;
+            }
+        }
+
+        let output_para = document.getElementById('output')
+
+        for (let key in count) {
+            output_para.innerHTML += `<p> count of ${key} - ${count[key]} </p>`
+        }
+    </script>
+
+    <hr>
+</body>
+
+</html>

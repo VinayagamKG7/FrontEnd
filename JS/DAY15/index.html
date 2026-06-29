@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Day15 Task</title>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        input {
+            display: block;
+            margin: 10px 0;
+            padding: 8px;
+        }
+
+        button {
+            padding: 8px 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Register Form</h2>
+
+    <form onsubmit="registerUser(event)" id="form_data">
+
+        <input type="text" id="name" placeholder="Enter Name">
+
+        <input type="number" id="age" placeholder="Enter Age">
+
+        <input type="email" id="email" placeholder="Enter Email">
+
+        <input type="password" id="password" placeholder="Enter Password">
+
+        <button type="submit">
+            Register
+        </button>
+
+    </form>
+
+
+    <h2>Registered Users</h2>
+
+    <div id="output"></div>
+
+
+    <script>
+
+        let users = [];
+
+        function registerUser(event) {
+
+            event.preventDefault();
+
+
+            let user = {
+
+                name: document.getElementById("name").value,
+
+                age: document.getElementById("age").value,
+
+                email: document.getElementById("email").value,
+
+                password: document.getElementById("password").value
+
+            };
+
+
+            users.push(user);
+
+
+            let result = "";
+
+            for (let i = 0; i < users.length; i++) {
+
+                result += `
+                    Name : ${users[i].name}<br>
+                    Age : ${users[i].age}<br>
+                    Email : ${users[i].email}
+                    <hr>
+                `;
+            }
+
+            document.getElementById("output").innerHTML = result;
+
+
+            document.getElementById('form_data').reset();
+
+        }
+
+    </script>
+
+</body>
+
+</html>
