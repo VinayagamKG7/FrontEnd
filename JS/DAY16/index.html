@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async</title>
+</head>
+
+<body>
+
+
+    <table style="border:1px solid black; border-collapse: collapse;">
+        <thead>
+            <th>S.no</th>
+            <th>Name</th>
+            <th>Preparation Time</th>
+        </thead>
+
+        <tbody id="show_data">
+
+        </tbody>
+    </table>
+
+    <script>
+        const dataTake = async () => {
+
+            const datas = await fetch('https://dummyjson.com/recipes')
+
+            const result = await datas.json()
+
+            let recipe = result.recipes
+
+            let elem = document.getElementById('show_data')
+            recipe.forEach((element, index) => {
+
+                elem.innerHTML += `
+                    <tr style="text-align:center;border:1px solid black;padding:10px">
+                        <td>${index + 1}</td>
+                        <td>${element.name}</td>
+                        <td>${element.prepTimeMinutes}</td>
+                    </tr>  
+                `
+            })
+
+        }
+
+        dataTake()
+    </script>
+</body>
+
+</html>
